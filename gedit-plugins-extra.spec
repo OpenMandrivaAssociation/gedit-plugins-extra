@@ -1,5 +1,5 @@
 %define name gedit-plugins-extra
-%define version 2.24.0
+%define version 2.24.1
 %define release %mkrel 1
 
 Summary: Unofficial set of plugins for gedit
@@ -30,7 +30,6 @@ for GNOME.
 This package contains some thirdparty plugins for gEdit, extending gEdit
 functionality.
 
-
 %prep
 %setup -q -n %name
 
@@ -41,7 +40,6 @@ functionality.
 %install
 rm -rf %{buildroot}
 %makeinstall_std
-mv %buildroot/listings %buildroot%_libdir/gedit-2/plugins/LaTeXPlugin/
 
 %clean
 rm -rf %{buildroot}
@@ -51,3 +49,4 @@ rm -rf %{buildroot}
 %doc CREDITS AUTHORS  ChangeLog README NEWS
 %_libdir/gedit-2/plugins/*
 %_datadir/gtksourceview-2.0/styles/*.xml
+%_libdir/pkgconfig/*.pc
