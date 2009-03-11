@@ -1,6 +1,6 @@
 %define name gedit-plugins-extra
 %define version 2.24.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Unofficial set of plugins for gedit
 Name: %{name}
@@ -20,6 +20,7 @@ BuildRequires: libglade2.0-devel
 Requires: gedit
 Requires: python-gtksourceview
 Requires: gnome-python-gnomevfs
+Requires: gnome-python-gtkmozembed
 Requires: pygtk2.0-libglade
 Requires: ctags
 
