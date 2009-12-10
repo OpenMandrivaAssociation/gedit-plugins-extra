@@ -1,6 +1,6 @@
 %define name gedit-plugins-extra
 %define version 2.24.1
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary: Unofficial set of plugins for gedit
 Name: %{name}
@@ -23,6 +23,8 @@ Requires: gnome-python-gnomevfs
 Requires: gnome-python-gtkmozembed
 Requires: pygtk2.0-libglade
 Requires: ctags
+#gw latex plugin, bug #56261
+Requires: rubber
 
 %description
 gEdit is a small but powerful text editor designed expressly
@@ -48,6 +50,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc CREDITS AUTHORS  ChangeLog README NEWS
-%_libdir/gedit-2/plugins/*
+#%_libdir/gedit-2/plugins/*
 %_datadir/gtksourceview-2.0/styles/*.xml
 %_libdir/pkgconfig/*.pc
