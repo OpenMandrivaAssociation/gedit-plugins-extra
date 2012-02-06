@@ -1,6 +1,6 @@
 %define name gedit-plugins-extra
 %define version 2.24.1
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary: Unofficial set of plugins for gedit
 Name: %{name}
