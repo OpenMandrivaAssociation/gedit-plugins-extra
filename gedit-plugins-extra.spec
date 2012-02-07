@@ -16,7 +16,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: gedit-devel
 BuildRequires: python-gtksourceview-devel
 BuildRequires: ctags
-BuildRequires: libgnome-vfs2-devel
+BuildRequires: gnome-vfs2-devel
 BuildRequires: libglade2.0-devel
 Requires: gedit
 Requires: python-gtksourceview
